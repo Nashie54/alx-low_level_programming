@@ -22,6 +22,7 @@ int main(void)
 	{
 		printf("%lu \n", next);
 	}
+	else
 	{
 		printf("%lu, ", next);
 	}
