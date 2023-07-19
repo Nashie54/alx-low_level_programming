@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - main block
@@ -7,31 +6,27 @@
  * Numbers must be coma and space separated.
  * Return: 0
  */
-
 int main(void)
 {
-	int count = 3;
+	int count = 2;
+	long int i = 1, j = 2;
+	long int k;
 
-	long int first = 1, second = 2;
-	long int next = first + second;
-
-	printf("%lu, ", first);
-	printf("%lu, ", second);
-
+	printf("%lu, ", i);
 	while (count <= 50)
 	{
 		if (count == 50)
 		{
-			printf("%lu \n", next);
+			printf("%lu\n", j);
 		}
 		else
 		{
-			printf("%lu, ", next);
+			printf("%lu, ", j);
 		}
 
-		first = second;
-		second = next;
-		next = first + second;
+		k = j;
+		j += i;
+		i = k;
 		count++;
 	}
 
