@@ -18,10 +18,10 @@ int main(void)
 	printf("%lu, ", second);
 
 	while (count <= 50)
-		if (count == 50)
-		{
-			printf("%lu \n", next);
-		}
+	if (count == 50)
+	{
+		printf("%lu \n", next);
+	}
 	{
 		printf("%lu, ", next);
 	}
