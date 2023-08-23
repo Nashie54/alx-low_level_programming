@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * number - function to calculate the number of words
+ * number - function to calculate number of words
  * @str: string being passed to check for words
  *
  * Return: number of words
@@ -25,7 +25,6 @@ int number(char *str)
 	}
 	return (num);
 }
-
 /**
  * free_everything - frees the memory
  * @string: pointer values being passed for freeing
@@ -39,9 +38,9 @@ void free_everything(char **string, int i)
 }
 
 /**
- * strtow - function that splits a string into words
+ * strtow - function that splits string into words
  * @str: string being passed
- * Return: null if the string is empty or null or function fails
+ * Return: null if string is empty or null or function fails
  */
 char **strtow(char *str)
 {
@@ -56,7 +55,7 @@ char **strtow(char *str)
 	words = malloc((total_words + 1) * sizeof(char *));
 	if (words == 0)
 		return (NULL);
-	for (; *str != '\0' && b < total_words;)
+	for (; *str != '\0' &&  b < total_words;)
 	{
 		if (*str == ' ')
 			str++;
@@ -81,10 +80,7 @@ char **strtow(char *str)
 				c++;
 			}
 			words[b][c] = '\0';
-			b++;
-			c = 0;
-			length = 0;
-			str++;
+			b++; c = 0; length = 0; str++;
 		}
 	}
 	return (words);
