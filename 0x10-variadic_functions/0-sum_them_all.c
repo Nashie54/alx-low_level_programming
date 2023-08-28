@@ -2,7 +2,8 @@
 #include <stdarg.h>
 
 /**
- * struct checker - return sum of all parameters
+ * sum_them_all - return sum of all parameters
+ * unsigned int a - return value
  * @n: number of arguments
  * Return: sum of parameters
  */
