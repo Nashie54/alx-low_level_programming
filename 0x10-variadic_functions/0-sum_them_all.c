@@ -2,6 +2,8 @@
 #include <stdarg.h>
 
 /**
+ * @a: assigned struct
+ * struct checker - Description of the structure
  * sum_them_all - return sum of all parameters
  * @n: number of arguments
  * Return: sum of parameters
