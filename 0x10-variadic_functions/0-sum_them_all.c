@@ -3,7 +3,8 @@
 
 /**
  * sum_them_all - return sum of all parameters
- * unsigned int a - return value
+ * struct checker - Placeholder structure for demonstration
+ * @a: placeholder
  * @n: number of arguments
  * Return: sum of parameters
  */
